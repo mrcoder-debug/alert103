@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SafePH - Disaster Risk Reduction App",
+  title: "AlertAid - Disaster Risk Reduction App",
   description: "Stay safe during disasters with essential tools and information for Filipino citizens",
   keywords: "disaster, safety, Philippines, emergency, evacuation, preparedness",
   viewport: "width=device-width, initial-scale=1",

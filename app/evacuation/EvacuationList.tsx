@@ -24,7 +24,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
   const [visibleCount, setVisibleCount] = useState<number>(5);
 
   const evacuationCenters: EvacuationCenter[] = [
-   {
+  {
     id: '1',
     name: 'Awihao Covered Court',
     address: 'AWIHAO, Sitio Proper, Toledo City',
@@ -32,7 +32,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.334263,
     lng: 123.619015,
     capacity: 50,
-    facilities: [],
+    facilities: ['Sealed', 'Comfort Room', 'Child Friendly Space', 'Women Friendly Space'],
     type: 'Covered Court'
   },
   {
@@ -43,7 +43,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.331964,
     lng: 123.620499,
     capacity: 50,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Health Station', 'Women Friendly Space', 'Child Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -54,7 +54,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.336442,
     lng: 123.617147,
     capacity: 75,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space','Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board' ],
     type: 'School'
   },
   {
@@ -65,7 +65,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.358139,
     lng: 123.737887,
     capacity: 50,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space','Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board' ],
     type: 'School'
   },
   {
@@ -76,7 +76,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.337547,
     lng: 123.592115,
     capacity: 20,
-    facilities: [],
+    facilities: ['Sealed,', 'Comfort Room', 'Potable Water',],
     type: 'Private Building'
   },
   {
@@ -87,7 +87,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.341287,
     lng: 123.591183,
     capacity: 20,
-    facilities: [],
+    facilities: ['Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space',],
     type: 'Covered Court'
   },
   {
@@ -98,7 +98,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.340643,
     lng: 123.590885,
     capacity: 100,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water',  'Health Station', 'Child Friendly Space','Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -109,7 +109,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.339256,
     lng: 123.591057,
     capacity: 300,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space','Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -120,7 +120,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.348710,
     lng: 123.731643,
     capacity: 200,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space','Women Friendly Space', 'Prayer Room', 'Community Kitchen', 'Info Board'],
     type: 'School'
   },
   {
@@ -131,7 +131,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.313429,
     lng: 123.653843,
     capacity: 50,
-    facilities: [],
+    facilities: ['Sealed,', 'Comfort Room'],
     type: 'Covered Court'
   },
   {
@@ -142,7 +142,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.302259,
     lng: 123.685226,
     capacity: 20,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space','Women Friendly Space', 'Ramp(PWDs)'],
     type: 'Government Building'
   },
   {
@@ -153,7 +153,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.302259,
     lng: 123.685226,
     capacity: 15,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space','Women Friendly Space', 'Ramp(PWDs)'],
     type: 'Government Building'
   },
   {
@@ -164,7 +164,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.303191,
     lng: 123.685472,
     capacity: 150,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space','Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -175,7 +175,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.352655,
     lng: 123.613142,
     capacity: 200,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space','Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -186,7 +186,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.356852,
     lng: 123.613188,
     capacity: 200,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Community Kitchen', 'Ramp(PWDs)'],
     type: 'Covered Court'
   },
   {
@@ -197,7 +197,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.419242,
     lng: 123.667353,
     capacity: 30,
-    facilities: [],
+    facilities: ['Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space'],
     type: 'Covered Court'
   },
   {
@@ -208,7 +208,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.420297,
     lng: 123.669702,
     capacity: 30,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -219,7 +219,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.420297,
     lng: 123.669702,
     capacity: 60,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -230,7 +230,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.364412,
     lng: 123.699427,
     capacity: 70,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -241,7 +241,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.322332,
     lng: 123.759307,
     capacity: 10,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   
@@ -253,7 +253,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.313404,
     lng: 123.756659,
     capacity: 70,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -264,7 +264,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.366832,
     lng: 123.675481,
     capacity: 100,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -275,7 +275,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.307157,
     lng: 123.728665,
     capacity: 300,
-    facilities: [],
+    facilities: ['Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -286,7 +286,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.307076,
     lng: 123.729991,
     capacity: 300,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space',],
     type: 'School'
   },
   {
@@ -297,7 +297,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.308141,
     lng: 123.722304,
     capacity: 300,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -308,7 +308,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.400653,
     lng: 123.685595,
     capacity: 80,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -319,7 +319,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.393108,
     lng: 123.663436,
     capacity: 100,
-    facilities: [],
+    facilities: ['Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'Government Building'
   },
   {
@@ -330,7 +330,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.392324,
     lng: 123.663433,
     capacity: 240,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)'],
     type: 'School'
   },
   {
@@ -341,7 +341,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.393233,
     lng: 123.652804,
     capacity: 100,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'Government Building'
   },
   {
@@ -352,7 +352,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.393233,
     lng: 123.652804,
     capacity: 25,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)'],
     type: 'Government Building'
   },
   {
@@ -363,7 +363,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.393233,
     lng: 123.652804,
     capacity: 25,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)'],
     type: 'Government Building'
   },
   {
@@ -374,7 +374,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.393233,
     lng: 123.652804,
     capacity: 100,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)'],
     type: 'Covered Court'
   },
   {
@@ -385,7 +385,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.313544,
     lng: 123.704286,
     capacity: 50,
-    facilities: [],
+    facilities: ['Sealed,', 'Comfort Room', 'Child Friendly Space', 'Women Friendly Space'],
     type: 'Private Building'
   },
   {
@@ -396,7 +396,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.311321,
     lng: 123.708866,
     capacity: 375,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)'],
     type: 'Private Building'
   },
   {
@@ -407,7 +407,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.308742,
     lng: 123.708976,
     capacity: 625,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)'],
     type: 'Covered Court'
   },
   {
@@ -418,7 +418,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.306384,
     lng: 123.711610,
     capacity: 80,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -429,7 +429,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.306770,
     lng: 123.712554,
     capacity: 40,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -440,7 +440,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.305690,
     lng: 123.703861,
     capacity: 88,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -451,7 +451,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.309834,
     lng: 123.710408,
     capacity: 375,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -462,7 +462,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.393848,
     lng: 123.652858,
     capacity: 50,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -473,7 +473,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.372617,
     lng: 123.716104,
     capacity: 100,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'Covered Court'
   },
   {
@@ -484,7 +484,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.365421,
     lng: 123.619253,
     capacity: 50,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -495,7 +495,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.382496,
     lng: 123.659016,
     capacity: 200,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'Open Space'
   },
   {
@@ -506,7 +506,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.379187,
     lng: 123.657782,
     capacity: 150,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -517,7 +517,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.383112,
     lng: 123.657693,
     capacity: 1500,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -528,7 +528,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.347966,
     lng: 123.650112,
     capacity: 40,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -539,7 +539,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.328441,
     lng: 123.760468,
     capacity: 50,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -550,7 +550,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.382011,
     lng: 123.643909,
     capacity: 300,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'Covered Court'
   },
   {
@@ -561,7 +561,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.380809,
     lng: 123.643076,
     capacity: 300,
-    facilities: [],
+    facilities: ['Sealed,', 'Comfort Room', 'Child Friendly Space', 'Women Friendly Space',],
     type: 'School'
   },
   {
@@ -572,7 +572,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.349479,
     lng: 123.667179,
     capacity: 30,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board' ],
     type: 'School'
   },
     {
@@ -583,7 +583,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.348814,
     lng: 123.668421,
     capacity: 100,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -594,7 +594,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.446748,
     lng: 123.681056,
     capacity: 100,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'Covered Court'
   },
   {
@@ -605,7 +605,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.447342,
     lng: 123.683153,
     capacity: 70,
-    facilities: [],
+    facilities: ['Sealed,', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space',],
     type: 'School'
   },
   {
@@ -616,7 +616,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.433418,
     lng: 123.671000,
     capacity: 100,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -627,7 +627,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.424596,
     lng: 123.672073,
     capacity: 100,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -638,7 +638,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.329148,
     lng: 123.674860,
     capacity: 700,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -649,7 +649,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.337596,
     lng: 123.675118,
     capacity: 400,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -660,7 +660,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.383719,
     lng: 123.64144,
     capacity: 50,
-    facilities: [],
+    facilities: ['FFPs Storage', 'Sealed,', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'Private Building'
   },
   {
@@ -671,7 +671,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.374075,
     lng: 123.636868,
     capacity: 100,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)'],
     type: 'School'
   },
   {
@@ -682,7 +682,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.376493,
     lng: 123.637259,
     capacity: 700,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen','Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -693,7 +693,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.374849,
     lng: 123.638190,
     capacity: 700,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen', 'Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -704,7 +704,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.375445,
     lng: 123.634824,
     capacity: 500,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen', 'Ramp(PWDs)', 'Info Board'],
     type: 'Covered Court'
   },
   {
@@ -715,7 +715,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.369533,
     lng: 123.647820,
     capacity: 60,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)', 'Info Board'],
     type: 'Purpose-built Evacuation Center'
   },
   {
@@ -726,7 +726,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.322516,
     lng: 123.685034,
     capacity: 50,
-    facilities: [],
+    facilities: ['FFPs storage', 'Compost Pit', 'Sealed', 'Comfort Room', 'Potable Water', 'Laundry Space', 'Child Friendly Space', 'Women Friendly Space', 'Couple Room', 'Prayer Room', 'Community Kitchen', 'Wash Facility/Water Source', 'Ramp(PWDs)', 'Help Desk', 'Info Board'],
     type: 'Covered Court'
   },
   {
@@ -737,7 +737,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.322672,
     lng: 123.688011,
     capacity: 50,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -748,7 +748,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.377461,
     lng: 123.687868,
     capacity: 100,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen', 'Ramp(PWDs)', 'Info Board'],
     type: 'Covered Court'
   },
   {
@@ -759,7 +759,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.376302,
     lng: 123.686797,
     capacity: 38,
-    facilities: [],
+    facilities: ['Sealed', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -770,7 +770,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.321152,
     lng: 123.638631,
     capacity: 90,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen', 'Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -781,7 +781,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.335760,
     lng: 123.660056,
     capacity: 35,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen', 'Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -792,7 +792,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.387060,
     lng: 123.652122,
     capacity: 150,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen', 'Ramp(PWDs)', 'Info Board'],
     type: 'Covered Court'
   },
   {
@@ -803,7 +803,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.386579,
     lng: 123.652648,
     capacity: 100,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Health Station', 'Child Friendly Space', 'Women Friendly Space', 'Prayer Room', 'Community Kitchen', 'Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -814,7 +814,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.346452,
     lng: 123.632691,
     capacity: 20,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)', 'Info Board'],
     type: 'Government Building'
   },
   {
@@ -825,7 +825,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.345659,
     lng: 123.632071,
     capacity: 80,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -836,7 +836,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.410015,
     lng: 123.663666,
     capacity: 200,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)', 'Info Board'],
     type: 'Covered Court'
   },
   {
@@ -847,7 +847,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.412260,
     lng: 123.666666,
     capacity: 300,
-    facilities: [],
+    facilities: ['Sealed', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)',],
     type: 'School'
   },
   {
@@ -858,7 +858,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.364941,
     lng: 123.636563,
     capacity: 200,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)', 'Info Board'],
     type: 'School'
   },
   {
@@ -869,7 +869,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
     lat: 10.410321,
     lng: 123.786951,
     capacity: 80,
-    facilities: [],
+    facilities: ['FFPs storage', 'Sealed', 'Comfort Room', 'Potable Water', 'Child Friendly Space', 'Women Friendly Space', 'Ramp(PWDs)', 'Info Board'],
     type: 'School'
   }
   ];
@@ -1000,7 +1000,7 @@ export default function EvacuationList({ userLocation }: EvacuationListProps) {
             <div className="text-center mt-4">
               <button
                 onClick={handleLoadMore}
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                className="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors"
               >
                 View More
               </button>

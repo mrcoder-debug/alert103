@@ -15,7 +15,7 @@ export default function AppHeader() {
     { href: '/', label: 'Home', icon: 'ri-home-line' },
     { href: '/evacuation', label: 'Evacuation Centers', icon: 'ri-map-pin-line' },
     { href: '/emergency-contacts', label: 'Emergency Contacts', icon: 'ri-phone-line' },
-    { href: '/safety-news/', label: 'Safety News', icon: 'ri-news-line' },
+    // { href: '/safety-news/', label: 'Safety News', icon: 'ri-news-line' },
     { href: '/safety-guides', label: 'Safety Guides', icon: 'ri-book-open-line' },
     { href: '/emergency-kit', label: 'Emergency Kit', icon: 'ri-briefcase-line' }
   ];

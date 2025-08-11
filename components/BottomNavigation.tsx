@@ -26,12 +26,12 @@ export default function BottomNavigation() {
       activeIcon: 'ri-phone-fill',
       label: 'Emergency'
     },
-    {
-      href: '/safety-news',
-      icon: 'ri-news-line',
-      activeIcon: 'ri-news-fill',
-      label: 'News'
-    },
+    // {
+    //   href: '/safety-news',
+    //   icon: 'ri-news-line',
+    //   activeIcon: 'ri-news-fill',
+    //   label: 'News'
+    // },
     {
       href: '/safety-guides',
       icon: 'ri-book-open-line',
